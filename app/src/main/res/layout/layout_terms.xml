@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_4sdp"
+        android:textColor="@color/colorTheme"
+        android:textSize="@dimen/_12ssp"
+        android:text="Accepting the"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnTermsConditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_4sdp"
+        android:textSize="@dimen/_12ssp"
+        android:paddingEnd="@dimen/_4sdp"
+        android:paddingBottom="@dimen/_4sdp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTheme"
+        android:text="Terms and conditions"/>
+
+</LinearLayout>

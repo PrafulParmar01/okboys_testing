@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_toolbar">
+
+
+    <RelativeLayout
+        android:id="@+id/layoutStarting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_14sdp"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/labelProcessing"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:fontFamily="@font/font_inter_bold"
+                android:gravity="center"
+                android:text="@string/label_pay_service_fees"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_22ssp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/font_inter_semi_bold"
+                android:gravity="center"
+                android:text="@string/label_total_amount"
+                android:textColor="@color/colorLightGrayIcon"
+                android:textSize="@dimen/_15ssp" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:fontFamily="@font/font_inter_semi_bold"
+                android:gravity="center"
+                android:text="@string/symbol_rupees_five"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_22ssp" />
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/labelProcessing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnPayNow"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:fontFamily="@font/font_inter_regular"
+            android:gravity="center"
+            android:text="@string/label_do_not_close"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_10ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnPayNow"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rounded_yellow"
+            android:drawablePadding="@dimen/_8sdp"
+            android:fontFamily="@font/font_inter_semi_bold"
+            android:gravity="center"
+            android:text="@string/label_pay_now"
+            android:textColor="@color/color_toolbar"
+            android:textSize="@dimen/_13ssp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layoutSuccess"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_14sdp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:src="@drawable/ic_success_green" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:fontFamily="@font/font_inter_bold"
+                android:gravity="center"
+                android:text="@string/label_payment_success"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_22ssp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/font_inter_semi_bold"
+                android:gravity="center"
+                android:text="@string/label_total_amount"
+                android:textColor="@color/colorLightGrayIcon"
+                android:textSize="@dimen/_15ssp" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:fontFamily="@font/font_inter_semi_bold"
+                android:gravity="center"
+                android:text="@string/symbol_rupees_five"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_22ssp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layoutProgressSuccess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:indeterminateTint="@color/colorWhite" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/font_inter_semi_bold"
+                android:gravity="center"
+                android:text="@string/label_please_wait"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_16ssp" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layoutFailed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_14sdp"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_14sdp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:background="@drawable/bg_circle_failed"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/ic_failed_white" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:fontFamily="@font/font_inter_bold"
+                android:gravity="center"
+                android:text="@string/label_payment_failed"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_22ssp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/font_inter_regular"
+                android:gravity="center"
+                android:text="@string/msg_something_went_wrong_please_try_again"
+                android:textColor="@color/colorLightGrayIcon"
+                android:textSize="@dimen/_12ssp" />
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnRetry"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/rounded_yellow"
+            android:drawablePadding="@dimen/_8sdp"
+            android:fontFamily="@font/font_inter_semi_bold"
+            android:gravity="center"
+            android:text="@string/label_retry"
+            android:textColor="@color/color_toolbar"
+            android:textSize="@dimen/_13ssp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

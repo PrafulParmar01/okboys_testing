@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background">
+
+
+    <include
+        android:id="@+id/toolBarHome"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        layout="@layout/layout_home_toolbar" />
+
+    <androidx.fragment.app.FragmentContainerView
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/frag_container"
+        app:layout_constraintBottom_toTopOf="@+id/l_tab_bar"
+        app:layout_constraintTop_toBottomOf="@+id/toolBarHome"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/l_tab_bar"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="@dimen/_60sdp">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_home"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+           app:layout_constraintRight_toLeftOf="@+id/rl_order"
+            android:background="@drawable/rounded_tab_selected"
+            android:gravity="center"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_42sdp">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/iv_home"
+                android:src="@drawable/ic_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_home"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/iv_home"
+                android:text="@string/text_home"
+                android:textSize="@dimen/_8ssp"
+                android:textColor="@color/color_toolbar"
+                android:fontFamily="@font/font_inter_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_order"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:gravity="center"
+            android:background="@drawable/rounded_tab_unselected"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_42sdp">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/iv_order"
+                android:src="@drawable/ic_orders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_order"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/iv_order"
+                android:text="@string/text_orders"
+                android:textSize="@dimen/_8ssp"
+                android:textColor="@color/color_toolbar"
+                android:fontFamily="@font/font_inter_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_history"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/rl_order"
+            android:background="@drawable/rounded_tab_unselected"
+            android:gravity="center"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_42sdp">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/iv_history"
+                android:src="@drawable/ic_tab_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_history"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/iv_history"
+                android:text="@string/text_history"
+                android:textSize="@dimen/_8ssp"
+                android:textColor="@color/color_toolbar"
+                android:fontFamily="@font/font_inter_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

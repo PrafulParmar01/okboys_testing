@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.orders.view.OrdersFragment">
+
+    <include
+        android:id="@+id/layoutData"
+        layout="@layout/layout_connection_error" />
+
+
+    <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srl_direction="top">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewOrders"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_background"
+            android:padding="@dimen/_12sdp"
+            android:visibility="gone" />
+
+
+    </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading" />
+
+
+    <LinearLayout
+        android:id="@+id/layoutOrderCompleted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:src="@drawable/ic_order_compeleted"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtWelcome"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_inter_extra_bold"
+            android:text="CONGRATULATIONS!"
+            android:textColor="@color/color_yellow"
+            android:textSize="@dimen/_22ssp"
+            android:visibility="visible" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtMsgOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_inter_extra_bold"
+            android:text="Your order has been completed"
+            android:textAllCaps="true"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/_13ssp"
+            android:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnOrderOkay"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:background="@drawable/rounded_yellow"
+            android:fontFamily="@font/font_inter_regular"
+            android:gravity="center"
+            android:text="OK"
+            app:textAllCaps="true"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_11ssp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

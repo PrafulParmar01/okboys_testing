@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/profileToolBar"
+        layout="@layout/custom_home_toolbar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/profileToolBar"
+        android:layout_above="@+id/btnLogout"
+        android:padding="@dimen/_14sdp"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_inter_semi_bold"
+            android:text="Username"
+            android:textColor="@color/color_toolbar"
+            android:textSize="@dimen/_14ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_inter_regular"
+            android:text="Praful Parmar"
+            android:id="@+id/txtUserName"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/_13ssp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/font_inter_semi_bold"
+            android:text="E-mail"
+            android:textColor="@color/color_toolbar"
+            android:textSize="@dimen/_14ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_inter_regular"
+            android:text="Praful@gmail.com"
+            android:id="@+id/txtUserEmail"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/_13ssp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/font_inter_semi_bold"
+            android:text="Mobile Number"
+            android:textColor="@color/color_toolbar"
+            android:textSize="@dimen/_14ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_inter_regular"
+            android:text="+91 82000 78965"
+            android:id="@+id/txtUserMobile"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/_13ssp" />
+
+
+    </LinearLayout>
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_14sdp"
+        android:background="@drawable/rounded_yellow"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:fontFamily="@font/font_inter_semi_bold"
+        android:text="Logout"
+        android:textColor="@color/color_toolbar"
+        android:textSize="@dimen/_14ssp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_14sdp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rounded_card"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_14sdp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_inter_semi_bold"
+                android:text="₹800"
+                android:textColor="@color/color_yellow"
+                android:textSize="@dimen/_30sdp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtAmount"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:fontFamily="@font/font_inter_semi_bold"
+                android:maxLines="1"
+                android:text="July"
+                android:textColor="@color/color_yellow"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtAmount"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_toEndOf="@+id/txtMonth"
+                android:fontFamily="@font/font_inter_semi_bold"
+                android:maxLines="1"
+                android:text="2023"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:textColor="@color/color_yellow"
+                android:textSize="@dimen/_12sdp" />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtStaus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rounded_pink_card"
+            android:fontFamily="@font/font_inter_medium"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="@dimen/_4sdp"
+            android:text="Clear Dues"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

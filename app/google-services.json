@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "303336469861",
+    "firebase_url": "https://ok-boys-messaging-default-rtdb.firebaseio.com",
+    "project_id": "ok-boys-messaging",
+    "storage_bucket": "ok-boys-messaging.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303336469861:android:cb98ee7aee8c3f06dadd8c",
+        "android_client_info": {
+          "package_name": "com.ok.boys.delivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "303336469861-gas7b1v385oaqt9rfs02nqo938j1l5qt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAD9nrYuZQA-MVrgak7ei_V4cp6B-tla2g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "303336469861-gas7b1v385oaqt9rfs02nqo938j1l5qt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303336469861:android:86b8f55ff0c3e1c1dadd8c",
+        "android_client_info": {
+          "package_name": "com.okboys_customer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "303336469861-gas7b1v385oaqt9rfs02nqo938j1l5qt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAD9nrYuZQA-MVrgak7ei_V4cp6B-tla2g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "303336469861-gas7b1v385oaqt9rfs02nqo938j1l5qt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

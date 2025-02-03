@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentView"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:background="@color/color_background">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_inter_bold"
+        android:text="@string/label_log_in_to_your_account"
+        android:textColor="@color/color_toolbar"
+        android:textSize="@dimen/_18ssp" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_42sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/rounded_border"
+        android:drawableStart="@drawable/ic_phone"
+        android:drawablePadding="@dimen/_8sdp"
+        android:hint="@string/text_enter_mob_num"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:textColor="@color/color_toolbar"
+        android:textSize="@dimen/_14ssp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_32sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="@string/label_you_will_receive"
+        android:textColor="@color/colorGrey"
+        android:textSize="@dimen/_12ssp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_height="@dimen/_66sdp"
+        >
+
+        <include
+            android:id="@+id/layoutTerms"
+            layout="@layout/layout_terms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnGetStarted"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/layoutTerms"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:background="@drawable/rounded_yellow"
+            android:drawablePadding="@dimen/_8sdp"
+            android:gravity="center"
+            android:fontFamily="@font/font_inter_semi_bold"
+            android:text="@string/text_get_started"
+            android:textColor="@color/color_toolbar"
+            android:textSize="@dimen/_14ssp" />
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
